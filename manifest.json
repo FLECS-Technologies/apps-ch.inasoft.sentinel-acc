@@ -5,29 +5,19 @@
     "version": "##VERSION##",
     "revision": "0",
     "image": "flecs.azurecr.io/ch.inasoft.sentinel-acc",
+    "title": "Sentinel",
+    "author": "Inasoft Systems GmbH",
+    "description": "Licensing by Thales",
+    "category": "licensing",
     "multiInstance": false,
-    "editor": "",
-    "args": [
-        "--launch-arg-1",
-        "--launch-arg-2=8000"
-    ],
-    "capabilities": [],
-    "conffiles": [
-        "default.conf:/etc/my-app/default.conf",
-        "default.conf:/etc/my-app/default.conf:ro",
-        "default.conf:/etc/my-app/default.conf:rw"
-    ],
-    "devices": [
-        "/dev/net/tun"
-    ],
-    "env": [
-        "MY_ENV=value"
-    ],
+    "editor": ":1947",
+    "hostname": "flecs-sentinel-acc",
+    "interactive": true,
     "ports": [
-        "12345:12345"
+        "1947:1947"
     ],
     "volumes": [
-        "my-app-etc:/etc/my-app",
-        "/var/lib/my-app:/var/lib/my-app"
+        "sentinel_acc_hasplm:/etc/hasplm",
+        "sentinel_acc_hasplmVAR:/var/hasplm"
     ]
 }
